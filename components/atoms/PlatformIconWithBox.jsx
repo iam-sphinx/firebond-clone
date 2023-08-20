@@ -1,5 +1,5 @@
 // import { IconType } from 'react-icons/fa';
-import Button from '../atoms/Button';
+import Button from './Button';
 import { MdDone } from "react-icons/md";
 
 import Image from 'next/image';
