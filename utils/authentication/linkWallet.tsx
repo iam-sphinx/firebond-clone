@@ -1,5 +1,5 @@
 // Hacky solution
-declare var window: any;
+
 import React, { useState } from "react";
 import Web3 from "web3";
 import { useRouter } from "next/router";
@@ -41,7 +41,6 @@ function linkWallet() {
 
         // Update the state to show that the user is connected
         setState({ isConnected: true });
-        
       }
     } catch (err) {
       console.log(err);
