@@ -54,7 +54,7 @@ const Leaderboard = () => {
       console.error(error);
     }
   }
-  let ele: any;
+  let ele
   console.log("ye card hai", cards);
   if (cards != null) {
     ele = cards1.map((card: any, index: any) => {

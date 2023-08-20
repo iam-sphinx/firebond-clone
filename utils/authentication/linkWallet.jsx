@@ -1,5 +1,5 @@
 // Hacky solution
-declare var window: any;
+
 import React, { useState } from "react";
 import Web3 from "web3";
 import { useRouter } from "next/router";

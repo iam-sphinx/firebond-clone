@@ -31,7 +31,7 @@ function MissionViewPage() {
   ]);
   const [reward, setreward] = useState(1000);
   const [coinType, setcoinType] = useState("USDC");
-  let missionDetails: any;
+  let missionDetails
   console.log(router.query.myData);
   if (router.query.myData !== undefined) {
     missionDetails = JSON.parse(router.query.myData as string);

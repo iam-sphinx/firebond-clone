@@ -1,4 +1,4 @@
-declare var window: any;
+
 import RouteGuardAdmin from '@/utils/RouteGuardAdmin';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';

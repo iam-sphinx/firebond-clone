@@ -1,4 +1,4 @@
-declare var window: any;
+
 import { supabase } from "@/utils/supabaseClient";
 import Image from "next/image";
 import router from "next/router";
@@ -23,7 +23,7 @@ const UserCard = [
   // },
 ];
 // you will recieve communityId in props
-let wallet_id2: any;
+let wallet_id2
 const UserAuthCard = (props: any) => {
   const [verified, setVerified] = useState(UserCard.map(() => false));
   const [email, setEmail] = useState("");

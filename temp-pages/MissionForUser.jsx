@@ -16,7 +16,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { MdContentCopy } from "react-icons/md";
 import Answer from "@/utils/Answer";
 import axios from "axios";
-declare var window: any;
+
 // const [file, setFile] = useState("");
 var community_id = "";
 var user_wallet_id = "";
@@ -49,7 +49,7 @@ function MissionForUser(props: any) {
   const [coinType, setcoinType] = useState("USDC");
   const [invites, setInvites] = useState("0");
   const [isCompleted, setIsCompleted] = useState(false);
-  let missionDetails: any;
+  let missionDetails
   console.log(router.query.myData);
   if (router.query.myData !== undefined) {
     missionDetails = JSON.parse(router.query.myData as string);

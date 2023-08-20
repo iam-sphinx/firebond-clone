@@ -4,7 +4,7 @@ interface SmallMissionCardProps {
   missionTitle: String;
   missionDiscription: String;
   usdc: String;
-  page: any;
+  page
 }
 
 const SmallMissionCard: React.FC<SmallMissionCardProps> = ({

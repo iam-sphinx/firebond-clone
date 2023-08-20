@@ -14,7 +14,7 @@ import EditMission from "@/utils/EditMission";
 import MissionFormData from "@/utils/MissionFormData";
 import { useRouter } from "next/router";
 import SubmissionCard from "@/components/molecules/SubmissionCard";
-declare var window: any;
+
 var name = "user";
 if (typeof window !== "undefined") {
   const storedJsonData = localStorage.getItem("data");

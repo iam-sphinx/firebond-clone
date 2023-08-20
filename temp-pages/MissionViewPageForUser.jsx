@@ -16,7 +16,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { MdContentCopy } from "react-icons/md";
 import MissionUserAuthCard from "./MissionUserAuthCard";
 import axios from "axios";
-declare var window: any;
+
 // const [file, setFile] = useState("");
 var community_id = "";
 var user_wallet_id = "";
@@ -46,7 +46,7 @@ function MissionViewPageForUser(props: any) {
   const [reward, setreward] = useState(1000);
   const [coinType, setcoinType] = useState("USDC");
   const [isCompleted, setIsCompleted] = useState(false);
-  let missionDetails: any;
+  let missionDetails
   if (router.query.myData !== undefined) {
     missionDetails = JSON.parse(router.query.myData as string);
   } else {

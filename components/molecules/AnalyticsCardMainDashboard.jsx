@@ -18,7 +18,7 @@ function AnalyticsCardMainDashboard() {
   };
   let k = 0;
 
-  let monthNumber: any;
+  let monthNumber
   async function fetchdata() {
     const result = localStorage.getItem("data");
     const jsonData = JSON.parse(result ?? "{}");

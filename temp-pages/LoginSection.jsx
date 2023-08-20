@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-declare var window: any;
+
 import WalletAuth from "@/utils/authentication/walletAuth";
 import GoogleSignInButton from "@/utils/authentication/googleAuth";
 import { useRouter } from "next/router";
