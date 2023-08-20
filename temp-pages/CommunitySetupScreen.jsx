@@ -5,7 +5,7 @@ import IconButton from "../components/atoms/IconButton";
 import ProfileIcon from "../components/atoms/ProfileAvatar";
 import BackGroundPage from "../components/molecules/BackGroundPage";
 import { ReactElement, useState, useEffect } from "react";
-import DiscordIntegrationPopup from "./DiscordIntegrationPopup";
+import DiscordIntegrationPopup from "../temp-pages/DiscordIntegrationPopup";
 import Link from "next/link";
 import TextInput from "../components/atoms/TextInput";
 import EmailInput from "../components/atoms/EmailInput";

@@ -5,7 +5,7 @@ import IconButton from "../components/atoms/IconButton";
 import ProfileIcon from "../components/atoms/ProfileAvatar";
 import BackGroundPage from "../components/molecules/BackGroundPage";
 import { ReactElement, useState, useEffect } from "react";
-import DiscordIntegrationPopup from "./DiscordIntegrationPopup";
+import DiscordIntegrationPopup from "../temp-pages/DiscordIntegrationPopup";
 import Link from "next/link";
 import TextInput from "../components/atoms/TextInput";
 import EmailInput from "../components/atoms/EmailInput";
@@ -14,23 +14,26 @@ import FormData from "@/utils/FormData";
 import router from "next/router";
 import { set } from "date-fns";
 
-const UserDetails = (props): ReactElement => {
+const UserDetails = (props:any): ReactElement => {
   const obj = FormData();
   const [Username, setUsername] = useState("");
-  //   const [wallet,setwallet]
+//   const [wallet,setwallet]
   const [InputEmail, setInputemail] = useState("");
   const [OpenDiscord, setOpenDiscord] = useState(false);
-  const [flagDiscord, setDiscord] = useState("bg-[#8570E4]");
-  const [disableDiscord, setdisableDiscord] = useState(false);
+  const [flagDiscord, setDiscord] = useState('bg-\[\#8570E4\]');
+  const [disableDiscord,setdisableDiscord]=useState(false)
   const [imageUrl, setImageUrl] = useState("/Icons/DefaultUserIcon.png");
 
   let community_admin_avatar = "";
   let file: File;
   //Function to check wheather the email is already registered or not
-  async function emailExist(InputEmail: any) {}
-  async function onContinueClick() {
+  async function emailExist(InputEmail: any) {
+    
+
+}
+async function onContinueClick() {
     // to be put use rname unique check , -> done
-    console.log(Username, InputEmail);
+    console.log(Username,InputEmail,)
     const { data, error } = await supabase
       .from("userdata")
       .select("name")
@@ -49,7 +52,7 @@ const UserDetails = (props): ReactElement => {
 
     // setUsernamePopUp(false);
     let arr = [props.communityId];
-    // inserting
+    // inserting 
     const { data: new_data, error: new_error } = await supabase
       .from("userdata")
       .insert({
@@ -60,7 +63,7 @@ const UserDetails = (props): ReactElement => {
       });
     if (new_error) {
       console.log("erorr in inserting the data of username", new_error);
-    } else {
+    } else {  
       console.log("username succesfully inserted in our db now redirecting..");
 
       // have to update in community data table too.
@@ -119,15 +122,15 @@ const UserDetails = (props): ReactElement => {
         await window.localStorage.setItem("community_id", props.communityId);
         await window.localStorage.setItem("user_wallet_id", props.userWalletId);
         router.push({
-          pathname: "/MissionForUser",
+          pathname: '/MissionForUser',
           query: {
             myData: JSON.stringify(props.missionDetails),
-          },
-        });
+           }
+        },)
       }
     }
   }
-
+  
   const bucket_name = "community_admin_avatar";
   async function AdminAvatarUpload(file: any) {
     const { data, error } = await supabase.storage
@@ -174,12 +177,15 @@ const UserDetails = (props): ReactElement => {
   function handleEmail(e: any) {
     setInputemail(e.target.value);
   }
-  async function discordToken() {
+  async function  discordToken() {
+   
     // if (window.location.href.includes("access_token")) {
     //   console.log(flagDiscord, "flagDiscord");
     //   setDiscord('bg-green-800');
     //   setdisableDiscord(true)
+    
     //   const fragment = new URLSearchParams(window.location.hash.slice(1));
+
     //   const [accessToken, tokenType] = [
     //     fragment.get("access_token"),
     //     fragment.get("token_type"),
@@ -187,11 +193,13 @@ const UserDetails = (props): ReactElement => {
     //   console.log(fragment, "fragment", accessToken, tokenType);
     //   //write a code to store the access token in local in supabase table named as community_data
     //   // const { data, error } = await supabase.from("community_data").insert([{ DiscordToken: accessToken || ""}])
+      
     //   localStorage.setItem("accessToken", accessToken || "");
     //   //popup counter
     //   if(localStorage.getItem("popupCounter") == null)
     //   alert("Discord Integration Successful");
     //   localStorage.setItem("popupCounter", "1");
+    
     //   fetch("https://discord.com/api/users/@me", {
     //     headers: {
     //       authorization: `${tokenType} ${accessToken}`,
@@ -213,12 +221,14 @@ const UserDetails = (props): ReactElement => {
     //     .catch(console.error);
     // }
   }
-  function discord() {}
+  function discord() {
+   
+  }
 
   return (
     <>
       <BackGroundPage />
-
+     
       <Modal
         onClose={() => {
           setOpenDiscord(!OpenDiscord);
@@ -226,13 +236,15 @@ const UserDetails = (props): ReactElement => {
         open={OpenDiscord}
         style={{}}
       >
+        
         <div className="">
-          {/* check of Discord is connected or not */}
-
+         {/* check of Discord is connected or not */}
+         
+         
           <DiscordIntegrationPopup />
         </div>
       </Modal>
-
+     
       <div className="flex items-center justify-center ">
         <div className="absolute block w-[662px] h-[431px] top-[20vh] bg-gray-800 shadow-md ">
           <div className="relative block w-[662px] h-[54px] border-b-[1px] border-[#353B43]">
@@ -279,7 +291,7 @@ const UserDetails = (props): ReactElement => {
               handleChange2={handleEmail}
               handleValue={InputEmail}
             />
-
+        
             <IconButton
               icon={VscBlank}
               label="Continue"
@@ -288,6 +300,7 @@ const UserDetails = (props): ReactElement => {
               onClick={onContinueClick}
             />
           </div>
+        
         </div>
       </div>
     </>

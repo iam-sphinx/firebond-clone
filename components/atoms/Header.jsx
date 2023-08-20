@@ -15,7 +15,7 @@ function handlelogout() {
 const Header = (props) => {
   const [name, setName] = useState("user");
   const [Avatar, setAvatar] = useState("Icons/Avatar.svg");
-  function getPuclicURL(user: any) {
+  function getPuclicURL() {
     console.log(user.community_admin_avatar);
     const { data } = supabase.storage
       .from("community_admin_avatar")

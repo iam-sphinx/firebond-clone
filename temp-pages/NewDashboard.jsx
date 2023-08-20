@@ -5,7 +5,7 @@ import Mission from "@/components/molecules/MissionCard";
 import AnalyticsCardMainDashboard from "@/components/molecules/AnalyticsCardMainDashboard";
 import RecentlyJoinedCardDashboardScreen from "@/components/molecules/RecentlyJoinedCardDashboardScreen";
 import OnboardingExperienceCard from "@/components/molecules/OnboardingExperienceCard";
-import RouteGuardAdmin from "@/utils/RouteGuardAdmin";
+
 import { useEffect, useState } from "react";
 
 const cards = [
@@ -143,4 +143,4 @@ const NewDashboard = () => {
   );
 };
 
-export default RouteGuardAdmin(NewDashboard);
+export default NewDashboard;

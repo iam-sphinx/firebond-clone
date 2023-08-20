@@ -16,7 +16,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { MdContentCopy } from "react-icons/md";
 import Answer from "@/utils/Answer";
 import axios from "axios";
-
+declare var window: any;
 // const [file, setFile] = useState("");
 var community_id = "";
 var user_wallet_id = "";
@@ -197,7 +197,7 @@ function MissionForUser(props: any) {
         router.push("/YourSpace");
       }
       // const members = updated_rowData.Members.filter(
-      //   (item: any,index) =>{
+      //   (item: any,index:any) =>{
       //     if(item.user_wallet_id === user_wallet_id){
 
       //       console.log('in');
