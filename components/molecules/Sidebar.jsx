@@ -1,7 +1,7 @@
 import Image from "next/image";
 import router from "next/router";
 import React, { useState, useEffect } from "react";
-declare var window: any;
+
 var name = "user";
 if (typeof window !== "undefined") {
   const storedJsonData = localStorage.getItem("data");

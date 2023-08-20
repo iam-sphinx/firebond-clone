@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import ProfileIcon from "../atoms/ProfileAvatar";
 
- const TopContentCard =  (props:any) => {
+ const TopContentCard =  (props) => {
   return (
     <div className="w-[452px] h-[102px] bg-[#232B35] border-[1px] border-solid border-[#404A54] rounded-2xl">
       <div className="flex gap-3 px-6 py-[18px]">

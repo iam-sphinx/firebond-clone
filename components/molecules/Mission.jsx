@@ -5,13 +5,13 @@ const Mission = (props: any) => {
     const [heading,setHeading] = useState('');
     const [subHeading,setSubHeading] = useState('');
 
-    const handleSub = async (e:any)=>{
+    const handleSub = async (e)=>{
         const newSubHeading = e.target.value
         setSubHeading(newSubHeading);
         await props.updateMission(props.id, heading,subHeading);
     }
 
-    const handleHead = async (e:any)=>{
+    const handleHead = async (e)=>{
         const newHeading = e.target.value
         setHeading(newHeading);
        await props.updateMission(props.id, heading,subHeading);

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { HiXCircle } from "react-icons/hi2";
 import { RxCrossCircled } from "react-icons/rx";
 
-const Details = (props :any) => {
+const Details = (props ) => {
   const obj = MissionFormData();
   const [descriptionError,setdescriptionError] = useState(obj.description==''||obj.description==undefined?true:false);
   const [on, setOn] = useState(false);
@@ -27,7 +27,7 @@ const Details = (props :any) => {
       }
     }
   };
-  function handleDescription(e:any){
+  function handleDescription(e){
     setDescription(e.target.value)
     // console.log(descriptionError);
     if(e.target.value.length&&e.target.value.length>0){

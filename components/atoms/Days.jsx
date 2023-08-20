@@ -6,7 +6,7 @@ import { Context } from "vm";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const Days = (props:any) => {
+const Days = (props) => {
   const data = {
     datasets: [
       {

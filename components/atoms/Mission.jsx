@@ -7,7 +7,7 @@ import { Context } from "vm";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const Mission = (props:any) => {
+const Mission = (props) => {
   const data = {
     datasets: [
       {

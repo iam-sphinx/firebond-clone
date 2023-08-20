@@ -1,7 +1,7 @@
 import { ReactElement, useState } from 'react';
 
 type TextInputProps = {
-  handleChange2:(e:any)=> void;
+  handleChange2:(e)=> void;
   handleValue:string;
   label: string;
   placeholder?: string;

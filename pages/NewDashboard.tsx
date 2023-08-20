@@ -8,8 +8,6 @@ import OnboardingExperienceCard from "@/components/molecules/OnboardingExperienc
 import RouteGuardAdmin from "@/utils/RouteGuardAdmin";
 import { useEffect, useState } from "react";
 
-declare var window: any;
-
 const cards = [
   {
     key: 1,

@@ -3,7 +3,7 @@ import Button from './Button';
 import { MdDone } from "react-icons/md";
 
 import Image from 'next/image';
-export const PlatformIconWithBox = (props:any)=> {
+export const PlatformIconWithBox = (props)=> {
    
     return (
       

@@ -47,7 +47,7 @@ const LeaderboardUserPage = () => {
         return;
       }
       console.log("members hain", rowData.Members);
-      rowData.Members.sort((a:any,b:any)=>{
+      rowData.Members.sort((a,b)=>{
         return b.current_xp - a.current_xp;
       })
       let temp_arr = [];
@@ -60,7 +60,7 @@ const LeaderboardUserPage = () => {
       console.error(error);
     }
   }
-  let ele:any
+  let ele
   console.log("ye card hai", cards);
   if (cards!=null) {
     ele = cards1.map((card: any, index: any) => {

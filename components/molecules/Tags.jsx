@@ -7,7 +7,7 @@ import { HiOutlinePlusCircle, HiXCircle } from "react-icons/hi2";
 import FilterTags from "@/utils/FilterTags";
 // import FormData from "@/utils/MissionFormData";
 
-const Tags = (props:any) => {
+const Tags = (props) => {
   let title = 'Tags';
   if(props.title!=undefined){
     title = props.title;

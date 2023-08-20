@@ -1,4 +1,3 @@
-declare var window: any;
 import { supabase } from "@/utils/supabaseClient";
 import Image from "next/image";
 import router from "next/router";
@@ -32,7 +31,6 @@ const UserAuthCard = (props: any) => {
   const [Username, setUsesrname] = useState("");
   const [UsernamePopUp, setUsernamePopUp] = useState(false);
 
- 
   const checkUserExists = async (table: any, wallet_id: string) => {
     const { data, error } = await supabase
       .from(table)
@@ -263,7 +261,7 @@ const UserAuthCard = (props: any) => {
       });
     if (new_error) {
       console.log("erorr in inserting the data of username", new_error);
-    } else {  
+    } else {
       console.log("username succesfully inserted in our db now redirecting..");
 
       // have to update in community data table too.

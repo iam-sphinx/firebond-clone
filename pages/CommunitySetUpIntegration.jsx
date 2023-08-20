@@ -1,4 +1,4 @@
-declare var window: any;
+
 import axios from "axios";
 import Link from "next/link";
 import { IntegrationOption } from "../components/molecules/IntegrationOption";

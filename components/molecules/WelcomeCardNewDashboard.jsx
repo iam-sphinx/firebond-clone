@@ -6,7 +6,7 @@ import Days from "../atoms/Days";
 
 
 
-const WelcomeCardNewDashboard = (props:any) => {
+const WelcomeCardNewDashboard = (props) => {
   
 
   return (

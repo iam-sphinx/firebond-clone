@@ -1,7 +1,7 @@
 import React from 'react'
 import { PlatformIconWithBox } from './PlatformIconWithBox'
 
-export default function MemberXpDetailsForTopContributor(props:any) {
+export default function MemberXpDetailsForTopContributor(props) {
   return (
     <>
       <div className='inline-block'>

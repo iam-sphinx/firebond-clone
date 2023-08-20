@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MissionStepsCard = (props:any) => {
+const MissionStepsCard = (props) => {
   return (
     <div className="bg-[#232B35]  w-auto h-[351px] rounded-[20px]">
         <div className="text-[24px] relative mx-[30px] top-[20px] mb-[50px] text-[General Sans] font-[600] font-[General Sans] mb-[35px] text-white ">Missions steps</div>

@@ -5,7 +5,7 @@ import { supabase } from "@/utils/supabaseClient";
 
 
 
-declare var window: any;
+
 let username = "";
 const UserHeader = () => {
   const [name, setName] = useState("user");

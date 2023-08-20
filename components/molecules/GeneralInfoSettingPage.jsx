@@ -4,7 +4,7 @@ import { BiImageAdd } from "react-icons/bi";
 import { BsTwitter } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 
-const GeneralInfoSettingPage = (props:any) => {
+const GeneralInfoSettingPage = (props) => {
   const [name, setName] = useState(props.name);
   const [email, setEmail] = useState(props.email);
   const [role,setRole] = useState("");

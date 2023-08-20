@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Head from "next/head";
-export default function BackGroundPage(props:any) {
+export default function BackGroundPage(props) {
   return (
    
         <>

@@ -47,7 +47,7 @@ const TopContributorAnalyticsScreen = () => {
       </h1>
       <div className="w-full h-auto">
         {sortedGuys != null &&
-          sortedGuys.map((item :any, index:any) => {
+          sortedGuys.map((item , index) => {
             return (
               <div
                 key={index}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import router from "next/router";
 import React, { useEffect, useState } from "react";
-declare var window: any;
+
 var name = "user";
 if (typeof window !== "undefined") {
   const storedJsonData = localStorage.getItem("data");
@@ -33,7 +33,7 @@ const secondMenu = [
     route: "/HelpCentre",
   },
 ];
-const UserSidebar = (props:any) => {
+const UserSidebar = (props) => {
   const [hideMenu, setHideMenu] = useState(false);
   const [name, setName] = useState("");
 

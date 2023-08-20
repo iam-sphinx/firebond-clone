@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function TwitterHandlePopUp(props:any) {
+export default function TwitterHandlePopUp(props) {
     
     function onContinueClick(){
 

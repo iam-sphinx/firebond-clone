@@ -1,4 +1,4 @@
-declare var window: any;
+
 import { supabase } from "@/utils/supabaseClient";
 import Image from "next/image";
 import router from "next/router";

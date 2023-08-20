@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const HeaderFirstPage = (props:any) => {
+const HeaderFirstPage = (props) => {
   const bgColor = () => {
     const loginButton = document.getElementById("login");
     if (loginButton) {

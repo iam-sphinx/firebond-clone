@@ -6,13 +6,13 @@ import Image from "next/image";
 import { supabase } from "@/utils/supabaseClient";
 let data = 0;
 
-declare var window: any;
+
 
 function handlelogout() {
   localStorage.removeItem("data");
   router.push("/FirstPage");
 }
-const Header = (props:any) => {
+const Header = (props) => {
   const [name, setName] = useState("user");
   const [Avatar, setAvatar] = useState("Icons/Avatar.svg");
   function getPuclicURL(user: any) {

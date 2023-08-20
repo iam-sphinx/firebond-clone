@@ -10,7 +10,7 @@ import Image from "next/image";
 import { PlatformIconWithBox } from "../atoms/PlatformIconWithBox";
 import { BsDash } from "react-icons/bs";
 
-export default function MemberListCardMissionPage(props:any) {
+export default function MemberListCardMissionPage(props) {
   const cards = props.cards;
   //DO NOT REMOVE BELOW COMMENT
   
@@ -135,7 +135,7 @@ export default function MemberListCardMissionPage(props:any) {
                   </div>
                   <div className="col-span-2">
                     {/* <div className="flex gap-[7px]">
-                      {item.platform.map((item:any,index:any)=>{
+                      {item.platform.map((item,index)=>{
                         return (
                           <div key={index} className={`h-10 w-10 rounded-[10px] flex items-center justify-center ${item === "Discord" && "bg-[#6359E9]"} ${item === "Twitter" && "bg-[#64CFF6]"}`}>
                             <Image src={item === "Discord" ? "Icons/Discord.svg" : "Icons/Twitter.svg"} height={item === "Discord" ? 14.78 : 16.25} width={20} alt=" "/>

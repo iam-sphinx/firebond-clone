@@ -16,7 +16,7 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { MdContentCopy } from "react-icons/md";
 import MissionUserAuthCard from "./MissionUserAuthCard";
 import axios from "axios";
-declare var window: any;
+
 // const [file, setFile] = useState("");
 var community_id = "";
 var user_wallet_id = "";
@@ -82,16 +82,16 @@ function MissionViewPageForUser(props: any) {
 
   // const coinType = "USDC";
   const [walletAddress, setWalletAddress] = useState("");
-  const [referralUrl,setReferralUrl] = useState("");
-  const [validationUrl,setValidationUrl] = useState("");
+  const [referralUrl, setReferralUrl] = useState("");
+  const [validationUrl, setValidationUrl] = useState("");
 
   const handleUrl = async (url: any, missionID: any) => {
     let referralUrl = "";
     let validationUrl = "";
     try {
       const response = await axios.get(url);
-      console.log("axios ka data" ,response.data)
-      console.log("axios ka url", url)
+      console.log("axios ka data", response.data);
+      console.log("axios ka url", url);
       referralUrl = response.data.referral;
       setReferralUrl(referralUrl);
       validationUrl = response.data.validation;
@@ -274,7 +274,7 @@ function MissionViewPageForUser(props: any) {
         router.push("/YourSpace");
       }
       // const members = updated_rowData.Members.filter(
-      //   (item: any,index:any) =>{
+      //   (item: any,index) =>{
       //     if(item.user_wallet_id === user_wallet_id){
 
       //       console.log('in');
