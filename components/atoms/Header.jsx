@@ -1,9 +1,8 @@
 import React from "react";
-import linkWallet from "@/utils/authentication/linkWallet";
 import router from "next/router";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { supabase } from "@/utils/supabaseClient";
+// import { supabase } from "@/utils/supabaseClient";
 let data = 0;
 
 
@@ -38,7 +37,7 @@ const Header = (props) => {
     localStorage.clear();
     router.push("/FirstPage");
   };
-  const onWalletLink = linkWallet();
+  // const onWalletLink = linkWallet();
   return (
     <div className="w-full h-[80px] sticky top-0 z-10 bg-[#171C23] border-b border-[#353B43] py-5 px-4">
       <div className="w-full h-full flex justify-end items-center">

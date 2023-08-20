@@ -1,7 +1,12 @@
 "use client";
+// import AnalyticsCardMainDashboard from "../components/molecules/AnalyticsCardMainDashboard";
 import Header from "../components/atoms/Header";
 import Sidebar from "../components/molecules/Sidebar";
 import { useState } from "react";
+// import RecentlyJoinedCardDashboardScreen from "../components/molecules/RecentlyJoinedCardDashboardScreen";
+// import Mission from "../components/atoms/Mission";
+// import CommunityHealth from "../components/molecules/CommunityHealth";
+// import OnboardingExperienceCard from "../components/molecules/OnboardingExperienceCard";
 
 export default function Home() {
   const [name, setName] = useState("user");
@@ -34,27 +39,98 @@ export default function Home() {
                 {/* Main Section */}
                 <div className="flex gap-6 mb-10">
                   {/* Analytics & Recently Joined Section */}
-                  <div className="w-[400px] h-[750px] bg-[#232B35] rounded-[20px] overflow-hidden relative ">
+                  <div className="w-[365px] h-[750px] bg-[#232B35] rounded-[20px] overflow-hidden relative ">
                     <div className="absolute top-[29px]">
-                      <AnalyticsCardMainDashboard />
+                      {/* <AnalyticsCardMainDashboard /> */}
                     </div>
-                    <div className="h-[350px] w-[400px] z-10 absolute bottom-0">
-                      <RecentlyJoinedCardDashboardScreen />
+                    <div className="h-[350px] w-[365px] z-10 absolute bottom-0">
+                      {/* <RecentlyJoinedCardDashboardScreen /> */}
                     </div>
                   </div>
 
                   {/* Mission & Community Health Section */}
                   <div className="flex flex-col justify-between gap-5">
-                    <div className="h-[315px] w-[469px] bg-[#232A35] rounded-[20px] flex items-end">
-                      <Mission
+                    <div className="h-[365px] w-[469px] bg-[#232A35] rounded-[20px] flex items-end">
+                      {/* <Mission
                         contributors={contributors}
                         submission={submissions}
                         created={created.toString()}
                         active={active.toString()}
-                      />
+                      /> */}
                     </div>
-                    <div className="relative w-[469px] h-[414px] filter blur-sm">
-                      <CommunityHealth Twitter="30" Total="59.5K" />
+
+                    <div className="h-[365px] w-[469px] bg-[#232A35] rounded-[20px] flex items-end">
+                      {/* <Mission
+                        contributors={contributors}
+                        submission={submissions}
+                        created={created.toString()}
+                        active={active.toString()}
+                      /> */}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-6 mb-10">
+                  {/* Analytics & Recently Joined Section */}
+                  <div className="w-[365px] h-[750px] bg-[#232B35] rounded-[20px] overflow-hidden relative ">
+                    <div className="absolute top-[29px]">
+                      {/* <AnalyticsCardMainDashboard /> */}
+                    </div>
+                    <div className="h-[350px] w-[365px] z-10 absolute bottom-0">
+                      {/* <RecentlyJoinedCardDashboardScreen /> */}
+                    </div>
+                  </div>
+
+                  {/* Mission & Community Health Section */}
+                  <div className="flex flex-col justify-between gap-5">
+                    <div className="h-[365px] w-[469px] bg-[#232A35] rounded-[20px] flex items-end">
+                      {/* <Mission
+                        contributors={contributors}
+                        submission={submissions}
+                        created={created.toString()}
+                        active={active.toString()}
+                      /> */}
+                    </div>
+
+                    <div className="h-[365px] w-[469px] bg-[#232A35] rounded-[20px] flex items-end">
+                      {/* <Mission
+                        contributors={contributors}
+                        submission={submissions}
+                        created={created.toString()}
+                        active={active.toString()}
+                      /> */}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-6 mb-10">
+                  {/* Analytics & Recently Joined Section */}
+                  <div className="w-[365px] h-[750px] bg-[#232B35] rounded-[20px] overflow-hidden relative ">
+                    <div className="absolute top-[29px]">
+                      {/* <AnalyticsCardMainDashboard /> */}
+                    </div>
+                    <div className="h-[350px] w-[365px] z-10 absolute bottom-0">
+                      {/* <RecentlyJoinedCardDashboardScreen /> */}
+                    </div>
+                  </div>
+
+                  {/* Mission & Community Health Section */}
+                  <div className="flex flex-col justify-between gap-5">
+                    <div className="h-[365px] w-[469px] bg-[#232A35] rounded-[20px] flex items-end">
+                      {/* <Mission
+                        contributors={contributors}
+                        submission={submissions}
+                        created={created.toString()}
+                        active={active.toString()}
+                      /> */}
+                    </div>
+                    <div className="h-[365px] w-[469px] bg-[#232A35] rounded-[20px] flex items-end">
+                      {/* <Mission
+                        contributors={contributors}
+                        submission={submissions}
+                        created={created.toString()}
+                        active={active.toString()}
+                      /> */}
                     </div>
                   </div>
                 </div>
@@ -69,20 +145,20 @@ export default function Home() {
             </h1>
 
             {/* Cards */}
-            {cards.map((card, index) => {
+            {/* {cards.map((card, index) => {
               return (
-                <div key={card.key}>
-                  <OnboardingExperienceCard
+                <div key={card.key}> */}
+            {/* <OnboardingExperienceCard
                     flag={card.flag}
                     key={index}
                     title={card.title}
                     label={card.description}
                     buttonText={card.buttonText}
                     handleClick={card.onclick}
-                  />
-                </div>
+                  /> */}
+            {/* </div>
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>

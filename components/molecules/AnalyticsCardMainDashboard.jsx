@@ -33,7 +33,7 @@ function AnalyticsCardMainDashboard() {
     } else {
       console.log("discord data", data);
       monthNumber = data;
-      let DiscordArray: any[] = [];
+      let DiscordArray= [];
 
       console.log('mothnumber',monthNumber)
       // console.log('discordarray',DiscordArray)

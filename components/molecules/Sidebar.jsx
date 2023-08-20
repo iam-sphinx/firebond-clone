@@ -12,31 +12,31 @@ console.log(name);
 
 const mainMenu = [
   {
-    src: "Icons/box.svg",
+    src: "/Icons/code.png",
     size: 24,
     title: "’s Space",
     route: "/NewDashboard",
   },
   {
-    src: "Icons/bar-line-chart.svg",
+    src: "/Icons/code.png",
     size: 24,
     title: "Analytics",
     route: "/AnalyticsScreen",
   },
   {
-    src: "Icons/misson.svg",
+    src: "/Icons/code.png",
     size: 24,
     title: "Missions",
     route: "/MissionMain",
   },
   {
-    src: "Icons/members.svg",
+    src: "/Icons/code.png",
     size: 24,
     title: " Members",
     route: "/MemberScreen",
   },
   {
-    src: "Icons/icons.svg",
+    src: "/Icons/code.png",
     size: 24,
     title: "Leaderboard",
     route: "/LeaderBoardScreen",
@@ -51,13 +51,13 @@ const mainMenu = [
 
 const secondMenu = [
   {
-    src: "Icons/help_center.svg",
+    src: "/Icons/code.png",
     size: 24,
     title: "Help Centre",
     route: "/HelpCentre",
   },
   {
-    src: "Icons/setting.svg",
+    src: "/Icons/code.png",
     size: 24,
     title: "Settings",
     route: "/setting",
@@ -159,12 +159,12 @@ const Sidebar = () => {
       ) : (
         <div className="px-5">
           <nav className="h-[54px] flex justify-between mb-[54px] mt-[18px]">
-            <Image
-              width={152}
-              height={53.63}
-              src="/Icons/logo.svg"
-              alt="not found"
-            />
+            <div className="flex gap-4 items-center">
+              <div>
+                <img fill src="/Icons/code.png" className="h-16 w-16" />
+              </div>
+              <h1 className="text-xl font-medium text-[#a6a6a6]">Blogs</h1>
+            </div>
             <button
               onClick={() => {
                 setHideMenu(!hideMenu);

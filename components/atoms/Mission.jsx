@@ -1,9 +1,9 @@
 import React from "react";
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+// import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
-import { Doughnut } from "react-chartjs-2";
-import { Chart } from "chart.js/dist";
-import { Context } from "vm";
+// import { Doughnut } from "react-chartjs-2";
+// import { Chart } from "chart.js/dist";
+// import { Context } from "vm";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -13,7 +13,7 @@ const Mission = (props) => {
       {
         labels: ["completed", "remaining"],
         data: [props.count,39.07],
-        backgroundColor: (context : Context) => {
+        backgroundColor: (context ) => {
           const chart = context.chart;
           const { ctx, chartArea } = chart;
           if (!chartArea) {
@@ -37,7 +37,7 @@ const Mission = (props) => {
     plugins: {
       tooltip: {
         callbacks: {
-          label: function (context : Context) {
+          label: function (context ) {
             var label = context.dataset.labels[context.dataIndex] || "";
             if (label) {
               label += ": ";
@@ -52,7 +52,7 @@ const Mission = (props) => {
     },
   };
 
-  function getGradiant(chart : Chart ) {
+  function getGradiant(chart  ) {
     const {
       ctx,
       chartArea: { top, bottom, left, right },
